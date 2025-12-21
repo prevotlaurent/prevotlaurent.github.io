@@ -206,3 +206,82 @@ a:hover {
   color: #1e40af;                 /* slightly darker on hover */
 }
 
+
+/* --- Personal page grid --- */
+
+.grid-personal{
+  width: min(860px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tile-img{
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  background: #e5e7eb; /* fallback */
+  display: block;
+}
+
+/* Real squares */
+.tile-square{
+  aspect-ratio: 1 / 1;
+}
+
+/* Thin panoramas */
+.tile-pano{
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 5; /* adjust thinner/thicker here */
+}
+
+/* Background image inside */
+.tile-img::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--bgimg);
+  background-size: cover;
+  background-position: center;
+  filter: none;
+  transform: scale(1.02);
+}
+
+/* Overlay text */
+.tile-img .label{
+  position: absolute;
+  inset: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0) 60%);
+}
+
+.tile-img h2{
+  margin: 0;
+  font-size: 18px;
+}
+.tile-img p{
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  opacity: .95;
+}
+
+.tile-img:hover{
+  transform: translateY(-2px);
+  transition: transform .12s ease;
+}
+
+@media (max-width: 640px){
+  .grid-personal{
+    grid-template-columns: 1fr;
+  }
+  .tile-pano{
+    aspect-ratio: 16 / 7;
+  }
+}
+
+
