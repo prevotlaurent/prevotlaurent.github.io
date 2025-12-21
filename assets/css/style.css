@@ -106,14 +106,14 @@ a{ color: inherit; text-decoration: none; }
 
 .tile.profile {
   background-color: var(--sq1); color: white;/* fallback */
-  background-image: url("assets/images/wave.webp");
+  background-image: url("../images/wave.webp");
   background-size: cover;
   background-position: center;
 }
 
 .tile.research {
   background-color: var(--sq2); color: white; /* fallback */
-  background-image: url("assets/images/puymirol.webp");
+  background-image: url("../images/puymirol.webp");
   background-size: cover;
   background-position: center;
 }
@@ -121,14 +121,14 @@ a{ color: inherit; text-decoration: none; }
 
 .tile.teaching {
   background-color: var(--sq3); color: white; /* fallback */
-  background-image: url("assets/images/forest.webp");
+  background-image: url("../images/forest.webp");
   background-size: cover;
   background-position: center;
 }
 
 .tile.personal {
   background-color: var(--sq4); color: white; /* fallback */
-  background-image: url("assets/images/glow.webp");
+  background-image: url("../images/glow.webp");
   background-size: cover;
   background-position: center;
 }
