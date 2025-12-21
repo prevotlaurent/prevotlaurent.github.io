@@ -8,7 +8,7 @@
   --sq3: #f59e0b; /* amber */
   --sq4: #ef4444; /* red */
 
-  --radius: 18px;
+  --radius: 0px;
   --shadow: 0 10px 25px rgba(0,0,0,.08);
 }
 
@@ -162,5 +162,16 @@ a{ color: inherit; text-decoration: none; }
   .tile{
     min-height: 130px;
   }
+}
+
+a {
+  color: #1d4ed8;                 /* calm academic blue */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: #1e40af;                 /* slightly darker on hover */
 }
 
