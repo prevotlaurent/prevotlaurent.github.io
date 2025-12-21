@@ -1,12 +1,68 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Laurent Prévot</title>
+  <meta name="description" content="Academic homepage of Laurent Prévot." />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-  <p>It works.</p>
+  <div class="page">
+    <header class="header">
+      <div class="brand">
+        <h1>Laurent Prévot</h1>
+        <p>Language sciences · pragmatics · computational linguistics</p>
+      </div>
+    </header>
+
+    <main class="main" aria-label="Main navigation">
+      <div class="grid">
+        <a class="tile profile" href="profile.html">
+          <div>
+            <h2>Profile</h2>
+            <p>General stance, CV, projects, resources, GitHub.</p>
+          </div>
+          <div class="arrow">Open →</div>
+        </a>
+
+        <a class="tile research" href="research.html">
+          <div>
+            <h2>Research</h2>
+            <p>Research axes and selected publications.</p>
+          </div>
+          <div class="arrow">Open →</div>
+        </a>
+
+        <a class="tile teaching" href="teaching.html">
+          <div>
+            <h2>Teaching</h2>
+            <p>Courses, supervising, advice for prospective students.</p>
+          </div>
+          <div class="arrow">Open →</div>
+        </a>
+
+        <a class="tile personal" href="personal.html">
+          <div>
+            <h2>More personal</h2>
+            <p>A few words + links to other things.</p>
+          </div>
+          <div class="arrow">Open →</div>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Laurent Prévot</div>
+      <div><a href="mailto:">Contact</a> · <a href="https://github.com/prevotlaurent">GitHub</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+EOF
+
